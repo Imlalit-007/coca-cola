@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coca Cola</title>
+
+  <!--Google Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!--Font Awesome 5 CDN-->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--Jquery CDN -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+  <!--Swiper CSS CDN-->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.4/swiper-bundle.min.css" integrity="sha512-Chxzu1hIgdTWzvBYD6rifXuhsG91mXCtYP/hKHSHPRyYUluMJt3PVEE6k4ThFrE4l0NVnq9dfYSj7mEubGCTvw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <nav>
+    <a href="#" class="logo">
+      <img src="https://i.ibb.co/Trtpd04/CITYPNG-COM-HD-White-Coca-Cola-Logo-PNG-2000x2000.png">
+    </a>
+    <ul id="menu">
+      <a href="#" class="logo">
+        <img src="https://i.ibb.co/ck6QkjF/pngwing-com-1.png">
+      </a>
+      <span class="close" id="close" onclick="closeNav()">
+        <img src="https://i.ibb.co/c2VgQ3W/cancel.png">
+      </span>
+      <li>
+        <a href="#" id="navLink">Home</a>
+      </li>
+      <li>
+        <a href="#about" id="navLink">About</a>
+      </li>
+      <li>
+        <a href="#brands" id="navLink">Brands</a>
+      </li>
+      <li>
+        <a href="#" class="dropdown" onclick="dropDown()">Discover <i class="fa-solid fa-chevron-up" id="icon"></i>
+        </a>
+        <ul id="collapse">
+          <li>
+            <a href="#">Coke Studio Bharat</a>
+          </li>
+          <li>
+            <a href="#">Coke Studio Global</a>
+          </li>
+          <li>
+            <a href="#">Sprite Joke In A Bottle</a>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#contact" id="navLink">Contact</a>
+      </li>
+
+      <div class="login-btn">
+        <a href="#">Login</a>
+      </div>
+
+    </ul>
+
+    <div class="cart">
+      <a href="#">
+        <i class="fa-solid fa-cart-plus" style="color: #fff;"></i>
+      </a>
+    </div>
+
+    <div class="login">
+      <a href="#">Login</a>
+    </div>
+
+    <span class="menu-icon" onclick="openNav()">
+      <img src="https://i.ibb.co/HxzgnDY/hamburger.png">
+    </span>
+
+  </nav>
+
+  <div class="banner">
+    <div class="banner-text">
+      <h1>Taste the Feeling of <span id="element"></span></h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis praesentium facilis obcaecati nesciunt quas recusandae architecto alias ducimus veritatis, eveniet, cum minima voluptatum illo, unde repellat minus! Eos unde soluta perferendis corporis.</p>
+      <a href="#">Explore more</a>
+    </div>
+    <div class="swiper-container mySwiper" style="--swiper-navigation-color: #000;">
+
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide" data-swiper-parallax="-300">
+          <img src="https://i.ibb.co/4R45f31/pngwing-com-2-1.png">
+        </div>
+        <div class="swiper-slide" data-swiper-parallax="-200">
+          <img src="https://i.ibb.co/tZ4bkVn/pngwing-com-1-2.png">
+        </div>
+        <div class="swiper-slide" data-swiper-parallax="-100">
+          <img src="https://i.ibb.co/QQQpz12/CITYPNG-COM-HD-Coca-Cola-Diet-Light-Can-PNG-1248x1248.png">
+        </div>
+
+      </div>
+      <div class="swiper-pagination">
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+    </div>
+  </div>
+
+  <div class="heading" id="brands">
+    <h1>Our Brands</h1>
+    <p>our trusted and popular brands</p>
+  </div>
+
+  <div class="brands">
+
+    <div class="brand-img">
+      <img src="https://i.ibb.co/0jc67yg/Coca-Cola-Circle-Logo-Background-PNG-Image.png">
+    </div>
+
+    <div class="brand-img">
+      <img src="https://i.ibb.co/x3HkHB6/kisspng-sprite-logo-coca-cola-fanta-brand-5b76a9d6cc1609-455194941534503382836.png">
+    </div>
+
+    <div class="brand-img">
+      <img class="third-img" src="https://i.ibb.co/dL9PzjR/kisspng-pepsi-blue-fizzy-drinks-coca-cola-logo-pepsi-logo-5ac7a119ab5bc7-6822722115230323457019.png">
+    </div>
+
+    <div class="brand-img">
+      <img src="https://i.ibb.co/PG5G7r3/limca-logo-BA1-DE68142-seeklogo-com.png">
+    </div>
+
+    <div class="brand-img">
+      <img src="https://i.ibb.co/mz4vk9c/pngwing-com-1-3.png">
+    </div>
+
+    <div class="brand-img">
+      <img src="https://i.ibb.co/cLgBKYN/Maaza-logo-svg.png">
+    </div>
+
+  </div>
+
+  <div class="about" id="about">
+    <div class="about-text">
+      <h1>About us</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque mollitia aliquid eligendi aliquam illo, animi sint quos facere excepturi exercitationem. Neque maxime veniam odit provident?</p>
+    </div>
+  </div>
+
+  <div class="footer" id="contact">
+    <div class="footer-logo">
+      <img src="https://i.ibb.co/hCWNs3y/IMG-20240111-125046.png" alt="">
+    </div>
+    <div class="footer-links">
+      <a href="#">Contact us</a>
+      <a href="#">News</a>
+      <a href="#">Coca Cola Foundation</a>
+      <a href="#">Policies</a>
+      <a href="#">Leadership</a>
+      <a href="#">FAQs</a>
+    </div>
+    <div class="footer-social">
+      <ion-icon name="logo-youtube"></ion-icon>
+      <ion-icon name="logo-linkedin"></ion-icon>
+      <ion-icon name="logo-facebook"></ion-icon>
+      <ion-icon name="logo-twitter"></ion-icon>
+      <ion-icon name="logo-instagram"></ion-icon>
+    </div>
+    <div class="footer-copyright">
+      2024 The Coca Cola Company. All Rights Reserved.
+    </div>
+  </div>
+
+
+  <!-- ionic.io CDN -->
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <!--Swiper JS CDN-->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.4/swiper-bundle.min.js" integrity="sha512-0N/5ZOjfsh3niel+5dRD40HQkFOWaxoVzqMVAHnmAO2DC3nY/TFB7OYTaPRAFJ571IRS/XRsXGb2XyiFLFeu1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!--Typed.js CDN-->
+
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <!-- script.js -->
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
